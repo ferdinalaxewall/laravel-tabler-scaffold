@@ -16,7 +16,7 @@
                 <x:sidebar.item label="Dashboard" icon="bx-grid-alt" link="{{ url('/') }}" :activeCondition="Route::is('admin.dashboard')" />
 
                 <x:sidebar.menu-title title="Master Data" />
-                <x:sidebar.dropdown label="Users" icon="bx-group" :activeCondition="Route::is('admin.dashboard')">
+                <x:sidebar.dropdown label="Users" icon="bx-group" :activeCondition="Route::is('admin.users.*')">
                     <x:sidebar.dropdown-item label="Administrator" :activeCondition="Route::is('admin.users.administrator.*')"/>
                     <x:sidebar.dropdown-item label="Staff" :activeCondition="Route::is('admin.users.staff.*')"/>
                     <x:sidebar.sub-dropdown label="Others" :activeCondition="Route::is('admin.users.others.*')">
