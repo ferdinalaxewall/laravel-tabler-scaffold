@@ -1,0 +1,20 @@
+.tabler-sidebar #sidebar-menu .nav-item .nav-link {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 10px;
+    font-size: 0.9rem;
+}
+
+.tabler-sidebar #sidebar-menu .nav-item .nav-link i.bx {
+    font-size: 1.15rem;
+}
+
+.tabler-sidebar #sidebar-menu .sidebar-menu-title {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 0.75em;
+    display: block;
+    padding-left: calc(calc(var(--tblr-page-padding) * 2)/ 2);
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
