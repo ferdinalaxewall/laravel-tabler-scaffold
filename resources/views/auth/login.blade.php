@@ -2,7 +2,6 @@
 @section('title', 'Sign In')
 
 @section('content')
-
 <div class="row align-items-center g-4">
     <div class="col-lg">
         <div class="container-tight">
@@ -22,7 +21,7 @@
                             <label class="form-label">
                                 Password
                                 <span class="form-label-description">
-                                    <a href="javascript:void(0)" tabindex="4">Forgot password?</a>
+                                    <a href="{{ route('auth.forgot-password') }}" tabindex="4">Forgot password?</a>
                                 </span>
                             </label>
                             <div class="input-group input-group-flat">
@@ -59,6 +58,7 @@
                     </form>
                 </div>
             </div>
+            <div class="text-center text-secondary mt-3">Don't have account yet? <a href="{{ route('auth.register') }}" tabindex="-1">Sign up</a></div>
         </div>
     </div>
 

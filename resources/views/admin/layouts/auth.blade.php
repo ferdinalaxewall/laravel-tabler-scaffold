@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ config('app.name') }} - @yield('title', 'Authentication')</title>
+
+    <link rel="shortcut icon" href="https://laravel.com/img/favicon/favicon-32x32.png" type="image/x-icon">
+
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href="{{ asset('assets/admin/vendor/tabler/tabler.min.css') }}" rel="stylesheet">
     <!-- END GLOBAL MANDATORY STYLES -->

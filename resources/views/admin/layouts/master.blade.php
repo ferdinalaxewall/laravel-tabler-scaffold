@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{{ config('app.name') }} - @yield('title', 'Default Page')</title>
 
+    <link rel="shortcut icon" href="https://laravel.com/img/favicon/favicon-32x32.png" type="image/x-icon">
+
     {{-- Tabler CSS --}}
     <link rel="stylesheet" href="{{ asset('assets/admin/vendor/tabler/tabler.min.css') }}" />
 
