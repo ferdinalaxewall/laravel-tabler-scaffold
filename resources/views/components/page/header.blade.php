@@ -4,7 +4,7 @@
 ])
 
 
-<div class="page-header">
+<div class="page-header mb-3">
     <div class="row align-items-center">
         <div class="col">
             @if (!is_null($subtitle))

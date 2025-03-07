@@ -17,6 +17,8 @@
     {{-- Boxicons CSS --}}
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsvectormap/dist/css/jsvectormap.min.css" />
+
     <link rel="stylesheet" href="{{ asset('assets/admin/css/style.css') }}">
 
     @stack('css')
@@ -41,6 +43,12 @@
 
     {{-- Tabler JS --}}
     <script src="{{ asset('assets/admin/vendor/tabler/tabler.min.js') }}"></script>
+
+    {{-- ApexChart JS --}}
+    <script src="{{ asset('assets/admin/vendor/apexcharts/apexcharts.min.js') }}"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jsvectormap"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsvectormap/dist/maps/world.js"></script>
 
     {{-- iziToast JS --}}
     <script src="{{ asset('assets/admin/vendor/izitoast/js/iziToast.min.js') }}"></script>
