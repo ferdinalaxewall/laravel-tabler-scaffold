@@ -18,3 +18,15 @@
     margin-bottom: 10px;
     margin-top: 15px;
 }
+
+.tabler-navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1029;
+}
+
+.tabler-content-wrapper {
+    padding-top: 55px;
+}

@@ -30,7 +30,7 @@
         <div class="page-wrapper">
             @include('admin.components.partials.navbar')
 
-            <div class="page-header d-print-none mt-0">
+            <div class="page-header d-print-none mt-0 tabler-content-wrapper">
                 <div class="container-xl">
                     @yield('content')
                 </div>

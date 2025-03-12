@@ -1,5 +1,9 @@
-<header class="navbar navbar-expand-md d-print-none">
-    <div class="container-xl">
+<header class="navbar navbar-expand-md d-print-none tabler-navbar">
+    <div class="container-fluid">
+
+        <button class="navbar-toggler" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="navbar-nav flex-row order-md-last ms-auto">
             <div class="d-none d-md-flex">
                 <div class="nav-item dropdown d-none d-md-flex me-3">
