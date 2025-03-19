@@ -11,6 +11,10 @@
     {{-- Tabler CSS --}}
     <link rel="stylesheet" href="{{ asset('assets/admin/vendor/tabler/tabler.min.css') }}" />
 
+    {{-- dataTables CSS --}}
+    <link rel="stylesheet" href="{{ asset('assets/admin/vendor/dataTables/dataTables.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/admin/vendor/dataTables/dataTables-bootstrap.css') }}">
+
     {{-- iziToast CSS --}}
     <link rel="stylesheet" href="{{ asset('assets/admin/vendor/izitoast/css/iziToast.min.css') }}" />
 
@@ -31,7 +35,7 @@
             @include('admin.components.partials.navbar')
 
             <div class="page-header d-print-none mt-0 tabler-content-wrapper">
-                <div class="container-xl">
+                <div class="container-xl pb-4">
                     @yield('content')
                 </div>
             </div>
@@ -44,6 +48,9 @@
     {{-- Tabler JS --}}
     <script src="{{ asset('assets/admin/vendor/tabler/tabler.min.js') }}"></script>
 
+    {{-- dataTables JS --}}
+    <script src="{{ asset('assets/admin/vendor/dataTables/dataTables.min.js') }}"></script>
+
     {{-- ApexChart JS --}}
     <script src="{{ asset('assets/admin/vendor/apexcharts/apexcharts.min.js') }}"></script>
 
@@ -52,6 +59,9 @@
 
     {{-- iziToast JS --}}
     <script src="{{ asset('assets/admin/vendor/izitoast/js/iziToast.min.js') }}"></script>
+
+    {{-- Custom JS --}}
+    <script src="{{ asset('assets/admin/js/script.js') }}"></script>
 
     @include('admin.components.utils.izitoast')
     @stack('js')
