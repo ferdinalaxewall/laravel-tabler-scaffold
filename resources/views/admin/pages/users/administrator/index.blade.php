@@ -19,14 +19,43 @@
             </a>
         </div>
     </div>
-    <button type="button" class="btn btn-outline-primary btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Filter">
-        <i class="bx bx-filter-alt"></i>
+    <a role="button" href="#filterCanvas" class="btn btn-outline-primary" data-bs-toggle="offcanvas" aria-controls="filterCanvas">
+        <i class="bx bx-filter-alt me-2"></i>
+        Filter
     </button>
     <a href="{{ route('admin.users.administrator.create') }}" class="btn btn-primary btn-5 ">
         <i class="bx bx-plus me-2"></i>
         Add Administrator
     </a>
 </x:page.header>
+
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="filterCanvas" aria-labelledby="filterCanvas">
+    <div class="offcanvas-header">
+        <h2 class="offcanvas-title" id="offcanvasEndLabel">Filter</h2>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <form action="" class="row" method="GET" id="filter-form">
+            <div class="col-12 mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter name">
+            </div>
+            <div class="col-12 mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="text" class="form-control" id="email" email="email" placeholder="Enter email">
+            </div>
+        </form>
+    </div>
+    <div class="offcanvas-footer row">
+        <div class="col-md-6">
+            <button type="button" class="btn btn-outline-secondary w-100" id="reset-filter-button">Reset</button>
+        </div>
+        <div class="col-md-6">
+            <button type="button" class="btn btn-primary w-100" id="save-filter-button">Filter</button>
+        </div>
+    </div>
+</div>
 
 <div class="row row-cards">
     <div class="col-12">
